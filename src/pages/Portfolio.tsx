@@ -62,7 +62,7 @@ const Portfolio = () => {
           </ScrollReveal>
 
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 gap-8 mb-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
             {projects.map((project, index) => (
               <ScrollReveal key={index} delay={index * 0.1}>
                 <Card className="bg-card/50 backdrop-blur border-primary/20 hover:border-primary/50 transition-all duration-300 card-glow-hover h-full group">
@@ -97,9 +97,6 @@ const Portfolio = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                 <Button size="lg" asChild className="text-lg">
                   <a href="mailto:plhaljakub18@gmail.com">Get In Touch</a>
-                </Button>
-                <Button size="lg" variant="outline" asChild className="text-lg border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  <a href="tel:+420724407454">Call Me</a>
                 </Button>
               </div>
               <div className="flex flex-wrap justify-center gap-4">

@@ -11,12 +11,7 @@ const Navigation = () => {
   ];
 
   return (
-    <motion.nav
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-lg border-b border-border/50"
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-lg border-b border-border/50">
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-center items-center">
           <ul className="flex gap-8">
@@ -45,7 +40,7 @@ const Navigation = () => {
           </ul>
         </div>
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 

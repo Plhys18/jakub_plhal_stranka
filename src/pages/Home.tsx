@@ -223,9 +223,6 @@ const Home = () => {
               <Button size="lg" asChild className="text-lg">
                 <a href="mailto:plhaljakub18@gmail.com">plhaljakub18@gmail.com</a>
               </Button>
-              <Button size="lg" variant="outline" asChild className="text-lg border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                <a href="tel:+420724407454">+420 724 407 454</a>
-              </Button>
             </div>
             <div className="flex justify-center gap-4">
               <Button
