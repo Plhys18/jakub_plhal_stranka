@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark tech theme - always dark mode */
+    --background: 210 9% 4%;
+    --foreground: 180 3% 78%;
+
+    --card: 210 13% 12%;
+    --card-foreground: 180 3% 78%;
+
+    --popover: 210 13% 12%;
+    --popover-foreground: 180 3% 78%;
+
+    --primary: 174 100% 70%;
+    --primary-foreground: 210 9% 4%;
+
+    --secondary: 175 46% 45%;
+    --secondary-foreground: 180 3% 78%;
+
+    --muted: 210 13% 12%;
+    --muted-foreground: 180 2% 60%;
+
+    --accent: 174 100% 70%;
+    --accent-foreground: 210 9% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 180 3% 78%;
+
+    --border: 210 13% 12%;
+    --input: 210 13% 12%;
+    --ring: 174 100% 70%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --tech-dark: 210 9% 4%;
+    --tech-darker: 210 13% 12%;
+    --tech-gray: 180 3% 78%;
+    --tech-muted: 180 2% 60%;
+    --cyan-glow: 174 100% 70%;
+    --cyan-secondary: 175 46% 45%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210 9% 4% / 0.95), hsl(210 13% 12% / 0.9));
+    --gradient-card: linear-gradient(145deg, hsl(210 13% 12%), hsl(210 9% 8%));
+    --glow-cyan: 0 0 20px hsl(174 100% 70% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--cyan-glow) / 0.5);
+  }
+  
+  .card-glow {
+    box-shadow: 0 4px 20px hsl(var(--cyan-glow) / 0.1);
+  }
+  
+  .card-glow-hover:hover {
+    box-shadow: 0 8px 30px hsl(var(--cyan-glow) / 0.2);
+  }
+}
