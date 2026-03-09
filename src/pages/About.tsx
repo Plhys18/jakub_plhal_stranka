@@ -35,7 +35,7 @@ const About = () => {
     {
       title: "AI / LLM",
       icon: Code2,
-      skills: ["Claude API", "OpenAI API", "AI Agents", "Tool Use", "LLM Evaluation", "Prompt Engineering"],
+      skills: ["Claude API", "OpenAI API", "AI Agents", "Tool Use", "RAG", "LLM Evaluation", "Prompt Engineering", "Transformers", "Agentic Workflows"],
     },
     {
       title: "Tools & Platforms",

@@ -20,7 +20,7 @@ const Home = () => {
     },
     {
       title: "AI / LLM",
-      skills: ["Claude API", "OpenAI API", "AI Agents", "Tool Use", "LLM Evaluation"],
+      skills: ["Claude API", "OpenAI API", "AI Agents", "Tool Use", "RAG", "LLM Evaluation", "Transformers", "Agentic Workflows"],
     },
     {
       title: "Tools & Platforms",
