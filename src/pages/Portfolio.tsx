@@ -39,7 +39,7 @@ const Portfolio = () => {
       title: "Investment Calculator",
       description: "Interactive financial calculator with compound interest modeling, PDF export, and responsive charting.",
       tags: ["React", "TypeScript", "Recharts", "Tailwind CSS"],
-      link: "https://github.com/Plhys18/investicni-kalkulacka-demo",
+      link: "https://github.com/Plhys18/agentic-investicni-kalkulacka",
     },
   ];
 
