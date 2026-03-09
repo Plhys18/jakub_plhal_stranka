@@ -9,55 +9,38 @@ const About = () => {
     {
       title: "Software Engineer",
       company: "SolarWinds",
-      period: "Sep 2024 – Present",
-      description: "Full-stack development using C#, .NET, and React. Building reliable, maintainable solutions.",
+      period: "Apr 2024 – Present",
+      description: "Ship features end to end across C#/.NET backend and React frontend in a distributed, real-time platform. Integrate AI tooling into daily workflows and prototype LLM-based automation.",
     },
     {
-      title: "Software Engineer Intern",
-      company: "SolarWinds",
-      period: "Jul 2024 – Sep 2024",
-      description: "Contributed to development projects and learned modern software engineering practices.",
-    },
-    {
-      title: "Geodetic Engineer",
-      company: "Self-Employed",
-      period: "Jan 2013 – Present",
-      description: "Independent geodetic engineering services with 10+ years of experience.",
-    },
-    {
-      title: "Event Manager",
-      company: "College Dorms",
-      period: "Sep 2020 – Sep 2024",
-      description: "Organized events for 200+ attendees, developing leadership and management skills.",
-    },
-    {
-      title: "Teaching Assistant",
+      title: "Teaching Assistant (C & Python)",
       company: "Masaryk University",
-      period: "Sep 2022 – Mar 2023",
-      description: "Taught C and Python programming to university students.",
+      period: "Sep 2022 – Jun 2023",
+      description: "Co-designed assignments and automated testing suites for C and Python courses. Mentored students through debugging, memory management, and algorithmic thinking.",
+    },
+    {
+      title: "Engineer Intern",
+      company: "RPSnet",
+      period: "Jun 2018 – Sep 2019",
+      description: "Supported network infrastructure operations, maintenance, and troubleshooting.",
     },
   ];
 
   const skillCategories = [
     {
-      title: "Backend Development",
+      title: "Languages & Frameworks",
       icon: Code2,
-      skills: ["C#", ".NET", "Python", "Java", "C/C++", "Node.js"],
+      skills: ["TypeScript", "JavaScript", "C#", ".NET", "React", "Python", "C"],
     },
     {
-      title: "Frontend & Mobile",
+      title: "AI / LLM",
       icon: Code2,
-      skills: ["React", "TypeScript", "Flutter", "JavaScript", "HTML/CSS"],
+      skills: ["Claude API", "OpenAI API", "AI Agents", "Tool Use", "LLM Evaluation", "Prompt Engineering"],
     },
     {
-      title: "Tools & Technologies",
+      title: "Tools & Platforms",
       icon: Code2,
-      skills: ["Git", "CI/CD", "Visual Studio", "Linux/Unix", "Docker"],
-    },
-    {
-      title: "Methodologies",
-      icon: Code2,
-      skills: ["Agile", "Scrum", "TDD", "Code Review", "Version Control"],
+      skills: ["Git", "Docker", "CI/CD", "GitHub Actions", "PostgreSQL"],
     },
   ];
 
@@ -78,8 +61,8 @@ const About = () => {
             <div className="text-center mb-20">
               <h1 className="text-6xl font-bold mb-6 text-glow">About Me</h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                Software developer and AI enthusiast with strong academic background from Masaryk University. 
-                Fast learner who ships reliable, maintainable code.
+                Software engineer at SolarWinds shipping full-stack features in C#/.NET and React.
+                Building AI agents and LLM tooling in my free time. BSc Informatics, Masaryk University.
               </p>
               
               {/* Contact & Social Links */}
@@ -90,7 +73,7 @@ const About = () => {
                   className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                 >
                   <a 
-                    href="mailto:plhaljakub18@gmail.com"
+                    href="mailto:plhal.jakub18@gmail.com"
                     className="flex items-center gap-2"
                   >
                     <Mail className="w-4 h-4" />

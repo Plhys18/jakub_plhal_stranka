@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ChevronDown, Briefcase, Target, Ruler, Mail, Linkedin, Github } from "lucide-react";
+import { ChevronDown, Briefcase, Bot, FlaskConical, Mail, Linkedin, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 import EarthHero from "@/components/EarthHero";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -8,23 +8,23 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Home = () => {
   const stats = [
-    { icon: Briefcase, label: "3+ Years at SolarWinds", value: "Experience" },
-    { icon: Target, label: "200+ Attendees at Events", value: "Leadership" },
-    { icon: Ruler, label: "10+ Years Geodetic Engineering", value: "Expertise" },
+    { icon: Briefcase, label: "Software Engineer at SolarWinds", value: "Full-Stack" },
+    { icon: Bot, label: "Dev Agent, PR Review Agent, and more", value: "AI Agents" },
+    { icon: FlaskConical, label: "LLM Eval framework with LLM-as-judge", value: "Evaluation" },
   ];
 
   const skillCategories = [
     {
-      title: "Backend & Systems",
-      skills: ["C#", ".NET", "Python", "Java", "C/C++", "Node.js"],
+      title: "Languages & Frameworks",
+      skills: ["TypeScript", "JavaScript", "C#", ".NET", "React", "Python", "C"],
     },
     {
-      title: "Frontend & Mobile",
-      skills: ["React", "TypeScript", "Flutter", "JavaScript"],
+      title: "AI / LLM",
+      skills: ["Claude API", "OpenAI API", "AI Agents", "Tool Use", "LLM Evaluation"],
     },
     {
-      title: "Tools & Practices",
-      skills: ["Git", "CI/CD", "Visual Studio", "Linux/Unix", "Agile"],
+      title: "Tools & Platforms",
+      skills: ["Git", "Docker", "CI/CD", "GitHub Actions", "PostgreSQL"],
     },
   ];
 
@@ -108,9 +108,8 @@ const Home = () => {
           <ScrollReveal>
             <h2 className="text-5xl font-bold text-center mb-8">Who am I</h2>
             <p className="text-xl text-center text-muted-foreground max-w-3xl mx-auto mb-16">
-              Software developer and AI enthusiast with strong academic background from Masaryk University. 
-              Software Engineer at SolarWinds, experienced in C#/.NET/React and modern development practices. 
-              Fast learner who ships reliable, maintainable code.
+              Software engineer at SolarWinds shipping full-stack features in C#/.NET and React.
+              Building AI agents and LLM tooling in my free time. BSc Informatics, Masaryk University.
             </p>
           </ScrollReveal>
 
@@ -137,7 +136,7 @@ const Home = () => {
                 <Link to="/about">About Me</Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-lg border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                <a href="mailto:plhaljakub18@gmail.com">Contact</a>
+                <a href="mailto:plhal.jakub18@gmail.com">Contact</a>
               </Button>
             </div>
           </ScrollReveal>
@@ -221,7 +220,7 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Button size="lg" asChild className="text-lg">
-                <a href="mailto:plhaljakub18@gmail.com">plhaljakub18@gmail.com</a>
+                <a href="mailto:plhal.jakub18@gmail.com">plhal.jakub18@gmail.com</a>
               </Button>
             </div>
             <div className="flex justify-center gap-4">
