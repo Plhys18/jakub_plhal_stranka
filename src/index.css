@@ -2,65 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    /* Dark tech theme - always dark mode */
-    --background: 210 9% 4%;
-    --foreground: 180 3% 78%;
-
-    --card: 210 13% 12%;
-    --card-foreground: 180 3% 78%;
-
-    --popover: 210 13% 12%;
-    --popover-foreground: 180 3% 78%;
-
-    --primary: 174 100% 70%;
-    --primary-foreground: 210 9% 4%;
-
-    --secondary: 175 46% 45%;
-    --secondary-foreground: 180 3% 78%;
-
-    --muted: 210 13% 12%;
-    --muted-foreground: 180 2% 60%;
-
-    --accent: 174 100% 70%;
-    --accent-foreground: 210 9% 4%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 180 3% 78%;
-
-    --border: 210 13% 12%;
-    --input: 210 13% 12%;
-    --ring: 174 100% 70%;
-
-    --radius: 0.5rem;
-
-    /* Custom tokens */
-    --tech-dark: 210 9% 4%;
-    --tech-darker: 210 13% 12%;
-    --tech-gray: 180 3% 78%;
-    --tech-muted: 180 2% 60%;
-    --cyan-glow: 174 100% 70%;
-    --cyan-secondary: 175 46% 45%;
+    --on-primary-fixed-variant: #00635e;
+    --on-primary-fixed: #004440;
+    --surface-container-low: #121318;
+    --secondary: #98f2ed;
+    --on-primary-container: #003c38;
+    --outline-variant: #47484c;
+    --on-tertiary-fixed: #464849;
+    --surface-tint: #5bf3e8;
+    --error: #ff716c;
+    --surface-dim: #0d0e12;
+    --surface-container-lowest: #000000;
+    --surface-container: #18191e;
+    --tertiary: #f9f9fa;
+    --tertiary-dim: #e2e2e3;
+    --on-tertiary-container: #555758;
+    --error-dim: #d7383b;
+    --on-secondary: #005c59;
+    --tertiary-container: #eaebec;
+    --surface-variant: #24252b;
+    --primary-dim: #48e4da;
+    --primary-fixed-dim: #48e4da;
+    --inverse-on-surface: #54555a;
+    --on-primary: #005853;
+    --secondary-fixed: #98f2ed;
+    --on-secondary-container: #dafffc;
+    --primary-container: #19cbc1;
+    --on-tertiary: #5d5f60;
+    --on-tertiary-fixed-variant: #636566;
+    --on-secondary-fixed: #004745;
+    --primary: #5bf3e8;
+    --inverse-primary: #006b65;
+    --tertiary-fixed: #f0f1f2;
+    --on-surface: #faf8fe;
+    --secondary-fixed-dim: #89e4df;
+    --surface-container-high: #1e1f25;
+    --on-error-container: #ffa8a3;
+    --on-secondary-fixed-variant: #006764;
+    --secondary-container: #006a67;
+    --tertiary-fixed-dim: #e2e2e3;
+    --secondary-dim: #89e4df;
+    --surface-container-highest: #24252b;
+    --surface: #0d0e12;
+    --primary-fixed: #5bf3e8;
+    --on-background: #faf8fe;
+    --inverse-surface: #faf8fe;
+    --surface-bright: #2a2c32;
+    --on-surface-variant: #abaab0;
+    --error-container: #9f0519;
+    --on-error: #490006;
+    --outline: #75757a;
+    --background: #0d0e12;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(210 9% 4% / 0.95), hsl(210 13% 12% / 0.9));
-    --gradient-card: linear-gradient(145deg, hsl(210 13% 12%), hsl(210 9% 8%));
-    --glow-cyan: 0 0 20px hsl(174 100% 70% / 0.3);
+    --radius: 0.5rem;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-outline-variant;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-on-surface font-body selection:bg-primary/30 selection:text-primary;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 
@@ -70,15 +76,22 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .glass-panel {
+    background: rgba(36, 37, 43, 0.4);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(71, 72, 76, 0.15);
+  }
+  .hero-gradient {
+    background: radial-gradient(circle at center, rgba(91, 243, 232, 0.08) 0%, transparent 70%);
+  }
   .text-glow {
-    text-shadow: 0 0 20px hsl(var(--cyan-glow) / 0.5);
+    text-shadow: 0 0 20px rgba(91, 243, 232, 0.4);
   }
-  
-  .card-glow {
-    box-shadow: 0 4px 20px hsl(var(--cyan-glow) / 0.1);
-  }
-  
-  .card-glow-hover:hover {
-    box-shadow: 0 8px 30px hsl(var(--cyan-glow) / 0.2);
+  .project-card-glow:hover {
+    box-shadow: 0 0 30px rgba(91, 243, 232, 0.15);
+    border-color: rgba(91, 243, 232, 0.4);
   }
 }

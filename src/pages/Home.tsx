@@ -1,264 +1,248 @@
-import { motion } from "framer-motion";
-import { ChevronDown, Briefcase, Bot, FlaskConical, Mail, Linkedin, Github } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import EarthHero from "@/components/EarthHero";
-import ScrollReveal from "@/components/ScrollReveal";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 
 const Home = () => {
-  const stats = [
-    { icon: Briefcase, label: "Software Engineer at SolarWinds", value: "Full-Stack" },
-    { icon: Bot, label: "Dev Agent, PR Review Agent, and more", value: "AI Agents" },
-    { icon: FlaskConical, label: "LLM Eval framework with LLM-as-judge", value: "Evaluation" },
-  ];
-
-  const skillCategories = [
-    {
-      title: "Languages & Frameworks",
-      skills: ["TypeScript", "JavaScript", "C#", ".NET", "React", "Python", "C"],
-    },
-    {
-      title: "AI / LLM",
-      skills: ["Claude API", "OpenAI API", "AI Agents", "Tool Use", "RAG", "LLM Evaluation", "Transformers", "Agentic Workflows"],
-    },
-    {
-      title: "Tools & Platforms",
-      skills: ["Git", "Docker", "CI/CD", "GitHub Actions", "PostgreSQL"],
-    },
-  ];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <div className="min-h-screen">
-      <EarthHero />
-
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="text-center z-10"
-        >
-          <h1 className="text-7xl md:text-9xl font-bold mb-6 text-glow">
-            Jakub Plhal
-          </h1>
-          <p className="text-2xl md:text-3xl text-primary font-semibold mb-4">
-            Software Developer & AI Enthusiast
-          </p>
-          <p className="text-xl text-muted-foreground mb-8">
-            Software Engineer at SolarWinds
-          </p>
-          
-          {/* Social Links */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="flex gap-4 justify-center"
-          >
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            >
-              <a 
-                href="https://linkedin.com/in/jakub-plhal-621992279" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2"
-              >
-                <Linkedin className="w-5 h-5" />
-                LinkedIn
-              </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            >
-              <a 
-                href="https://github.com/Plhys18" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2"
-              >
-                <Github className="w-5 h-5" />
-                GitHub
-              </a>
-            </Button>
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.5 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10"
-        >
-          <ChevronDown className="w-8 h-8 text-primary animate-bounce-slow" />
-        </motion.div>
-      </section>
-
-      {/* Who am I Section */}
-      <section className="relative bg-tech-darker py-24 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <ScrollReveal>
-            <h2 className="text-5xl font-bold text-center mb-8">Who am I</h2>
-            <p className="text-xl text-center text-muted-foreground max-w-3xl mx-auto mb-16">
-              Software engineer at SolarWinds shipping full-stack features in C#/.NET and React.
-              Building AI agents and LLM tooling in my free time. BSc Informatics, Masaryk University.
+    <>
+      <main>
+{/*  Dramatic Hero Section  */}
+<section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+{/*  Background Element (EarthHero)  */}
+<div className="absolute inset-0 z-0 opacity-40">
+<EarthHero />
+<div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background pointer-events-none"></div>
+<div className="absolute inset-0 hero-gradient pointer-events-none"></div>
+</div>
+<div className="relative z-10 text-center px-6 max-w-5xl">
+<div className="mb-6">
+<span className="inline-block px-4 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-label tracking-widest uppercase mb-4">
+                        Based in synthetic ether
+                    </span>
+</div>
+<h1 className="text-6xl md:text-9xl font-headline font-bold tracking-tighter text-on-surface mb-4 leading-none text-glow">
+                    Jakub Plhal
+                </h1>
+<p className="text-xl md:text-3xl font-headline text-primary-dim mb-2 tracking-tight">
+                    Software Developer &amp; AI Enthusiast
+                </p>
+<p className="text-lg md:text-xl text-on-surface-variant font-light mb-12 max-w-2xl mx-auto">
+                    Software Engineer at SolarWinds
+                </p>
+<div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+<a className="w-full md:w-auto px-10 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary-container rounded-full font-bold flex items-center justify-center gap-2 transition-transform hover:scale-105 active:scale-95" href="https://www.linkedin.com/in/jakub-plhal18/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                        <span className="material-symbols-outlined text-xl">open_in_new</span>
+</a>
+<a className="w-full md:w-auto px-10 py-4 glass-panel text-on-surface rounded-full font-bold flex items-center justify-center gap-2 border border-outline-variant/30 hover:bg-surface-variant/40 transition-all" href="https://github.com/Plhys18" target="_blank" rel="noopener noreferrer">
+                        GitHub
+                        <span className="material-symbols-outlined text-xl">code</span>
+</a>
+</div>
+</div>
+</section>
+{/*  Who am I Section  */}
+<section className="py-32 px-8 max-w-7xl mx-auto" id="expertise">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+{/*  Card 1  */}
+<div className="glass-panel p-10 rounded-xl relative overflow-hidden group">
+<div className="absolute top-0 left-0 w-1 h-full bg-primary scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-500"></div>
+<div className="mb-8 bg-surface-container-high w-14 h-14 rounded-lg flex items-center justify-center text-primary">
+<span className="material-symbols-outlined text-3xl" data-weight="fill">developer_mode</span>
+</div>
+<h3 className="text-2xl font-headline font-bold mb-4 text-on-surface">Full-Stack</h3>
+<p className="text-on-surface-variant leading-relaxed">
+                        Software Engineer at SolarWinds. Building robust, scalable enterprise solutions with a focus on performance and clean architecture.
+                    </p>
+</div>
+{/*  Card 2  */}
+<div className="glass-panel p-10 rounded-xl relative overflow-hidden group">
+<div className="absolute top-0 left-0 w-1 h-full bg-primary scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-500"></div>
+<div className="mb-8 bg-surface-container-high w-14 h-14 rounded-lg flex items-center justify-center text-primary">
+<span className="material-symbols-outlined text-3xl" data-weight="fill">smart_toy</span>
+</div>
+<h3 className="text-2xl font-headline font-bold mb-4 text-on-surface">AI Agents</h3>
+<p className="text-on-surface-variant leading-relaxed">
+                        Architecting autonomous systems including Dev Agents and PR Review Agents to streamline developer workflows and enhance productivity.
+                    </p>
+</div>
+{/*  Card 3  */}
+<div className="glass-panel p-10 rounded-xl relative overflow-hidden group">
+<div className="absolute top-0 left-0 w-1 h-full bg-primary scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-500"></div>
+<div className="mb-8 bg-surface-container-high w-14 h-14 rounded-lg flex items-center justify-center text-primary">
+<span className="material-symbols-outlined text-3xl" data-weight="fill">query_stats</span>
+</div>
+<h3 className="text-2xl font-headline font-bold mb-4 text-on-surface">Evaluation</h3>
+<p className="text-on-surface-variant leading-relaxed">
+                        Implementing LLM Eval frameworks with LLM-as-judge methodologies to ensure accuracy, safety, and reliability in AI-driven features.
+                    </p>
+</div>
+</div>
+</section>
+{/*  Skills & Technologies Section  */}
+<section className="py-32 bg-surface-container-low" id="stack">
+<div className="max-w-7xl mx-auto px-8">
+<div className="mb-20 text-center">
+<h2 className="text-4xl md:text-5xl font-headline font-bold mb-6">Technical Arsenal</h2>
+<div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+</div>
+<div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+{/*  Column 1  */}
+<div>
+<h4 className="text-xs font-label uppercase tracking-widest text-primary-dim mb-8 flex items-center gap-3">
+<span className="w-2 h-2 bg-primary rounded-full"></span>
+                            Languages &amp; Frameworks
+                        </h4>
+<div className="flex flex-wrap gap-3">
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">TypeScript</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">JavaScript</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">C#</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">.NET</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">React</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">Python</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">C</span>
+</div>
+</div>
+{/*  Column 2  */}
+<div>
+<h4 className="text-xs font-label uppercase tracking-widest text-primary-dim mb-8 flex items-center gap-3">
+<span className="w-2 h-2 bg-primary rounded-full"></span>
+                            AI / LLM
+                        </h4>
+<div className="flex flex-wrap gap-3">
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">Claude API</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">OpenAI API</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">AI Agents</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">Tool Use</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">RAG</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">LLM Evaluation</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">Transformers</span>
+</div>
+</div>
+{/*  Column 3  */}
+<div>
+<h4 className="text-xs font-label uppercase tracking-widest text-primary-dim mb-8 flex items-center gap-3">
+<span className="w-2 h-2 bg-primary rounded-full"></span>
+                            Tools &amp; Platforms
+                        </h4>
+<div className="flex flex-wrap gap-3">
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">Git</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">Docker</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">CI/CD</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">GitHub Actions</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">PostgreSQL</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+{/*  Projects Section  */}
+<section className="py-32 px-8" id="work">
+<div className="max-w-7xl mx-auto">
+<div className="mb-20 text-center">
+<h2 className="text-4xl md:text-5xl font-headline font-bold mb-6 tracking-tight">Selected Projects</h2>
+<div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+</div>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+{/*  Project 1  */}
+<div className="glass-panel p-8 rounded-xl project-card-glow transition-all duration-500 flex flex-col h-full border-primary/10">
+<div className="flex items-center justify-between mb-6">
+<span className="material-symbols-outlined text-primary text-3xl">psychology</span>
+<div className="flex gap-2">
+<span className="text-[10px] px-2 py-0.5 rounded-full border border-primary/30 text-primary font-label uppercase">Claude 3.5</span>
+<span className="text-[10px] px-2 py-0.5 rounded-full border border-primary/30 text-primary font-label uppercase">Python</span>
+</div>
+</div>
+<h3 className="text-xl font-headline font-bold mb-3 text-on-surface">Autonomous Dev Agent</h3>
+<p className="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow">
+                        An AI agent that writes and refines code independently using Claude 3.5 Sonnet. Capable of understanding complex requirements and delivering production-ready modules.
+                    </p>
+<a className="flex items-center gap-2 text-primary font-medium group text-sm" href="https://github.com/Plhys18/dev-agent" target="_blank" rel="noopener noreferrer">
+                        View Project
+                        <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+{/*  Project 2  */}
+<div className="glass-panel p-8 rounded-xl project-card-glow transition-all duration-500 flex flex-col h-full border-primary/10">
+<div className="flex items-center justify-between mb-6">
+<span className="material-symbols-outlined text-primary text-3xl">rule_settings</span>
+<div className="flex gap-2">
+<span className="text-[10px] px-2 py-0.5 rounded-full border border-primary/30 text-primary font-label uppercase">OpenAI</span>
+<span className="text-[10px] px-2 py-0.5 rounded-full border border-primary/30 text-primary font-label uppercase">React</span>
+</div>
+</div>
+<h3 className="text-xl font-headline font-bold mb-3 text-on-surface">LLM Evaluation Suite</h3>
+<p className="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow">
+                        A comprehensive framework for testing LLM outputs using LLM-as-a-judge methodologies. Provides deep insights into model performance, safety, and factual accuracy.
+                    </p>
+<a className="flex items-center gap-2 text-primary font-medium group text-sm" href="https://github.com/Plhys18/llm-eval" target="_blank" rel="noopener noreferrer">
+                        View Project
+                        <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+{/*  Project 3  */}
+<div className="glass-panel p-8 rounded-xl project-card-glow transition-all duration-500 flex flex-col h-full border-primary/10">
+<div className="flex items-center justify-between mb-6">
+<span className="material-symbols-outlined text-primary text-3xl">monitoring</span>
+<div className="flex gap-2">
+<span className="text-[10px] px-2 py-0.5 rounded-full border border-primary/30 text-primary font-label uppercase">.NET</span>
+<span className="text-[10px] px-2 py-0.5 rounded-full border border-primary/30 text-primary font-label uppercase">TypeScript</span>
+</div>
+</div>
+<h3 className="text-xl font-headline font-bold mb-3 text-on-surface">SolarWinds Dashboard</h3>
+<p className="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow">
+                        Optimizing performance for enterprise-scale software monitoring interfaces. Focused on high-frequency data rendering and intuitive information architecture.
+                    </p>
+<a className="flex items-center gap-2 text-primary font-medium group text-sm" href="#">
+                        View Project
+                        <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+{/*  CTA Section  */}
+<section className="py-40 relative overflow-hidden" id="connect">
+<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
+<div className="max-w-4xl mx-auto px-8 text-center relative z-10">
+<h2 className="text-5xl md:text-7xl font-headline font-bold mb-8 tracking-tighter">Let's Work Together</h2>
+<p className="text-xl text-on-surface-variant mb-16 max-w-2xl mx-auto leading-relaxed">
+                    Available for collaborations on AI-driven platforms, complex software architecture, or cutting-edge synthetic intelligence research.
+                </p>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+<a className="glass-panel p-6 rounded-xl hover:bg-surface-container transition-all group flex flex-col items-center" href="mailto:plhal.jakub18@gmail.com">
+<span className="material-symbols-outlined text-primary mb-4 text-3xl group-hover:scale-110 transition-transform">alternate_email</span>
+<span className="font-headline font-medium">Email</span>
+</a>
+<a className="glass-panel p-6 rounded-xl hover:bg-surface-container transition-all group flex flex-col items-center" href="https://www.linkedin.com/in/jakub-plhal18/" target="_blank" rel="noopener noreferrer">
+<span className="material-symbols-outlined text-primary mb-4 text-3xl group-hover:scale-110 transition-transform">share</span>
+<span className="font-headline font-medium">LinkedIn</span>
+</a>
+<a className="glass-panel p-6 rounded-xl hover:bg-surface-container transition-all group flex flex-col items-center" href="https://github.com/Plhys18" target="_blank" rel="noopener noreferrer">
+<span className="material-symbols-outlined text-primary mb-4 text-3xl group-hover:scale-110 transition-transform">terminal</span>
+<span className="font-headline font-medium">GitHub</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+      <footer className="w-full py-12 border-t border-slate-800/20 bg-[#0d0e12]">
+<div className="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-6">
+<div className="text-lg font-bold text-slate-100 font-headline">JP.DEV</div>
+<p className="text-slate-500 font-body text-sm uppercase tracking-widest text-center">
+                © 2024 Jakub Plhal. Built in the Synthetic Ether.
             </p>
-          </ScrollReveal>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {stats.map((stat, index) => (
-              <ScrollReveal key={index} delay={index * 0.15}>
-                <Card className="bg-card/50 backdrop-blur border-primary/20 hover:border-primary/50 transition-all duration-300 card-glow-hover">
-                  <CardContent className="p-8 text-center">
-                    <stat.icon className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <h3 className="text-2xl font-bold mb-2">{stat.value}</h3>
-                    <p className="text-muted-foreground">{stat.label}</p>
-                  </CardContent>
-                </Card>
-              </ScrollReveal>
-            ))}
-          </div>
-
-          <ScrollReveal delay={0.3}>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button size="lg" asChild className="text-lg">
-                <Link to="/portfolio">View My Work</Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild className="text-lg border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                <Link to="/about">About Me</Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild className="text-lg border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                <a href="mailto:plhal.jakub18@gmail.com">Contact</a>
-              </Button>
-            </div>
-          </ScrollReveal>
-          
-          <ScrollReveal delay={0.4}>
-            <div className="flex justify-center gap-4 mt-6">
-              <Button
-                variant="ghost"
-                size="icon"
-                asChild
-                className="text-primary hover:text-primary hover:bg-primary/10"
-              >
-                <a 
-                  href="https://linkedin.com/in/jakub-plhal-621992279" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn Profile"
-                >
-                  <Linkedin className="w-6 h-6" />
-                </a>
-              </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                asChild
-                className="text-primary hover:text-primary hover:bg-primary/10"
-              >
-                <a 
-                  href="https://github.com/Plhys18" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="GitHub Profile"
-                >
-                  <Github className="w-6 h-6" />
-                </a>
-              </Button>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Skills Section */}
-      <section className="relative bg-background py-24 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <ScrollReveal>
-            <h2 className="text-5xl font-bold text-center mb-16">Skills & Technologies</h2>
-          </ScrollReveal>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {skillCategories.map((category, index) => (
-              <ScrollReveal key={index} delay={index * 0.15}>
-                <Card className="bg-card/50 backdrop-blur border-primary/20 hover:border-primary/50 transition-all duration-300 card-glow-hover h-full">
-                  <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold mb-6 text-primary">{category.title}</h3>
-                    <div className="flex flex-wrap gap-2">
-                      {category.skills.map((skill) => (
-                        <span
-                          key={skill}
-                          className="px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-sm hover:bg-primary/20 hover:scale-105 transition-all duration-300"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="relative bg-gradient-to-br from-secondary/20 to-primary/20 py-24 px-6">
-        <div className="container mx-auto max-w-4xl text-center">
-          <ScrollReveal>
-            <Mail className="w-16 h-16 text-primary mx-auto mb-6" />
-            <h2 className="text-5xl font-bold mb-6">Let's Work Together</h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <Button size="lg" asChild className="text-lg">
-                <a href="mailto:plhal.jakub18@gmail.com">plhal.jakub18@gmail.com</a>
-              </Button>
-            </div>
-            <div className="flex justify-center gap-4">
-              <Button
-                variant="ghost"
-                asChild
-                className="text-primary hover:text-primary hover:bg-primary/10"
-              >
-                <a 
-                  href="https://linkedin.com/in/jakub-plhal-621992279" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  <Linkedin className="w-5 h-5" />
-                  Connect on LinkedIn
-                </a>
-              </Button>
-              <Button
-                variant="ghost"
-                asChild
-                className="text-primary hover:text-primary hover:bg-primary/10"
-              >
-                <a 
-                  href="https://github.com/Plhys18" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  <Github className="w-5 h-5" />
-                  View GitHub
-                </a>
-              </Button>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-    </div>
+<div className="flex gap-6">
+<a className="text-slate-500 hover:text-[#5bf3e8] transition-colors font-body text-sm uppercase tracking-widest" href="https://www.linkedin.com/in/jakub-plhal18/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a className="text-slate-500 hover:text-[#5bf3e8] transition-colors font-body text-sm uppercase tracking-widest" href="https://github.com/Plhys18" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a className="text-slate-500 hover:text-[#5bf3e8] transition-colors font-body text-sm uppercase tracking-widest" href="mailto:plhal.jakub18@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+    </>
   );
 };
 

@@ -1,46 +1,21 @@
-import { Link, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
-  const location = useLocation();
-  
-  const navItems = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Portfolio", path: "/portfolio" },
-  ];
-
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-lg border-b border-border/50">
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex justify-center items-center">
-          <ul className="flex gap-8">
-            {navItems.map((item) => (
-              <li key={item.path}>
-                <Link
-                  to={item.path}
-                  className={`text-lg font-medium transition-all duration-300 relative ${
-                    location.pathname === item.path
-                      ? "text-primary"
-                      : "text-foreground hover:text-primary"
-                  }`}
-                >
-                  {item.name}
-                  {location.pathname === item.path && (
-                    <motion.div
-                      layoutId="activeNav"
-                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary"
-                      initial={false}
-                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                    />
-                  )}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <nav className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-xl">
+<div className="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div className="text-2xl font-bold tracking-tighter text-[#5bf3e8] font-headline">JP.DEV</div>
+<div className="hidden md:flex items-center gap-8">
+<a className="text-slate-400 hover:text-slate-100 transition-colors duration-300 font-headline tracking-tight" href="#work">Work</a>
+<a className="text-slate-400 hover:text-slate-100 transition-colors duration-300 font-headline tracking-tight" href="#expertise">Expertise</a>
+<a className="text-slate-400 hover:text-slate-100 transition-colors duration-300 font-headline tracking-tight" href="#stack">Stack</a>
+<a className="text-slate-400 hover:text-slate-100 transition-colors duration-300 font-headline tracking-tight" href="#connect">Connect</a>
+</div>
+<button className="bg-gradient-to-br from-primary to-primary-container text-on-primary-container px-6 py-2 rounded-full font-medium hover:scale-95 transition-all duration-300">
+                Resume
+            </button>
+</div>
+</nav>
   );
 };
 
