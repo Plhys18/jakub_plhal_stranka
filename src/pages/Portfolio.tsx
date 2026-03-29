@@ -128,7 +128,7 @@ const Portfolio = () => {
               
               <div className="flex flex-wrap justify-center gap-6 mt-12 pt-8 border-t border-white/10">
                 <Button variant="ghost" asChild className="text-muted-foreground hover:text-primary hover:bg-white/5 rounded-full px-6 py-6 transition-all text-lg">
-                  <a href="https://linkedin.com/in/jakub-plhal-621992279" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
+                  <a href="https://www.linkedin.com/in/jakub-plhal18/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
                     <Linkedin className="w-6 h-6" />
                     LinkedIn
                   </a>

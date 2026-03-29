@@ -88,7 +88,7 @@ const About = () => {
                   asChild
                   className="rounded-full px-6 border-primary/40 text-white bg-white/5 hover:bg-primary/20 hover:text-white backdrop-blur-md transition-all duration-300"
                 >
-                  <a href="https://linkedin.com/in/jakub-plhal-621992279" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <a href="https://www.linkedin.com/in/jakub-plhal18/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <Linkedin className="w-5 h-5 text-primary" />
                     LinkedIn
                   </a>
