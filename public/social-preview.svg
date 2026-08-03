@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="70%" cy="20%" r="80%">
+      <stop offset="0" stop-color="#164b4d" stop-opacity="0.7"/>
+      <stop offset="0.55" stop-color="#10171c" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#090d11" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop stop-color="#5bf3e8"/>
+      <stop offset="1" stop-color="#279b9f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#090d11"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g opacity="0.16" fill="#5bf3e8">
+    <circle cx="1020" cy="95" r="2"/><circle cx="1090" cy="185" r="3"/><circle cx="940" cy="260" r="2"/>
+    <circle cx="1100" cy="410" r="2"/><circle cx="995" cy="515" r="3"/><circle cx="880" cy="85" r="2"/>
+  </g>
+  <rect x="76" y="70" width="78" height="78" rx="20" fill="#0b0f14" stroke="#5bf3e8" stroke-width="3"/>
+  <text x="115" y="121" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" letter-spacing="-2" fill="#5bf3e8">JP</text>
+  <text x="76" y="275" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="800" letter-spacing="-4" fill="#f5f7fa">Jakub Plhal</text>
+  <text x="80" y="340" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="600" fill="#5bf3e8">Generative AI Engineer · Product Builder</text>
+  <rect x="80" y="390" width="1040" height="2" fill="url(#line)" opacity="0.55"/>
+  <text x="80" y="462" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#b9c4cf">Document automation · Agentic workflows · Production AI</text>
+  <text x="80" y="540" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="4" fill="#75838f">JAKUBPLHAL.COM</text>
+</svg>

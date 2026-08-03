@@ -20,7 +20,7 @@ const Home = () => {
 <div className="relative z-10 text-center px-6 max-w-5xl">
 <div className="mb-6">
 <span className="inline-block px-4 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-label tracking-widest uppercase mb-4">
-                        Based in synthetic ether
+                        Engineering AI that ships
                     </span>
 </div>
 <h1 className="text-6xl md:text-9xl font-headline font-bold tracking-tighter text-on-surface mb-4 leading-none text-glow">
@@ -30,7 +30,7 @@ const Home = () => {
                     Generative AI Engineer &amp; Product Builder
                 </p>
 <p className="text-lg md:text-xl text-on-surface-variant font-light mb-12 max-w-2xl mx-auto">
-                    Building generative AI at Y Soft
+                    Building AI document automation at Y Soft
                 </p>
 <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
 <a className="w-full md:w-auto px-10 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary-container rounded-full font-bold flex items-center justify-center gap-2 transition-transform hover:scale-105 active:scale-95" href="https://www.linkedin.com/in/jakub-plhal18/" target="_blank" rel="noopener noreferrer">
@@ -114,7 +114,10 @@ const Home = () => {
                         </h4>
 <div className="flex flex-wrap gap-3">
 <span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">Claude API</span>
-<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">OpenAI API</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">OpenAI Agents SDK</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">LangGraph</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">PydanticAI</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">Arize Phoenix</span>
 <span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">AI Agents</span>
 <span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">Tool Use</span>
 <span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">RAG</span>
@@ -133,7 +136,12 @@ const Home = () => {
 <span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">Docker</span>
 <span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">CI/CD</span>
 <span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">GitHub Actions</span>
-<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">PostgreSQL</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">AWS</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">Kubernetes</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">LiteLLM</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">OpenRouter</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">SQL</span>
+<span className="px-4 py-2 bg-surface-container-high border border-primary/20 rounded-full text-sm text-primary drop-shadow-[0_0_8px_rgba(91,243,232,0.1)]">Redis</span>
 </div>
 </div>
 </div>
@@ -210,7 +218,7 @@ const Home = () => {
 <div className="max-w-4xl mx-auto px-8 text-center relative z-10">
 <h2 className="text-5xl md:text-7xl font-headline font-bold mb-8 tracking-tighter">Let's Work Together</h2>
 <p className="text-xl text-on-surface-variant mb-16 max-w-2xl mx-auto leading-relaxed">
-                    Available for collaborations on AI-driven platforms, complex software architecture, or cutting-edge synthetic intelligence research.
+                    Available for collaborations on applied AI, product engineering, and ambitious systems that need to work beyond the demo.
                 </p>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 <a className="glass-panel p-6 rounded-xl hover:bg-surface-container transition-all group flex flex-col items-center" href="mailto:plhal.jakub18@gmail.com">
@@ -233,7 +241,7 @@ const Home = () => {
 <div className="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-6">
 <div className="text-lg font-bold text-slate-100 font-headline">JP.DEV</div>
 <p className="text-slate-500 font-body text-sm uppercase tracking-widest text-center">
-                © 2026 Jakub Plhal. Built in the Synthetic Ether.
+                © 2026 Jakub Plhal. Built with curiosity. Shipped with intent.
             </p>
 <div className="flex gap-6">
 <a className="text-slate-500 hover:text-[#5bf3e8] transition-colors font-body text-sm uppercase tracking-widest" href="https://www.linkedin.com/in/jakub-plhal18/" target="_blank" rel="noopener noreferrer">LinkedIn</a>

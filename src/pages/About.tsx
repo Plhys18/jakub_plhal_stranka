@@ -8,7 +8,7 @@ const About = () => {
       title: "Generative AI Engineer",
       company: "Y Soft",
       period: "May 2026 – Present",
-      description: "Build generative AI systems and turn fast-moving research into practical product capabilities.",
+      description: "Building an AI document-automation platform that turns unstructured business documents into reliable workflows integrated with ERP systems. Working with LangGraph, PydanticAI, OpenAI Agents SDK, Arize Phoenix, AWS, Kubernetes, TypeScript, SQL, and Redis; experimenting with LiteLLM and OpenRouter for model routing.",
     },
     {
       title: "Developer",
@@ -39,12 +39,12 @@ const About = () => {
     {
       title: "AI / LLM",
       icon: Cpu,
-      skills: ["Claude API", "OpenAI API", "AI Agents", "Tool Use", "RAG", "LLM Evaluation", "Prompt Engineering", "Transformers", "Agentic Workflows"],
+      skills: ["Claude API", "OpenAI Agents SDK", "LangGraph", "PydanticAI", "Arize Phoenix", "AI Agents", "Tool Use", "RAG", "LLM Evaluation", "LiteLLM", "OpenRouter"],
     },
     {
       title: "Tools & Platforms",
       icon: Wrench,
-      skills: ["Git", "Docker", "CI/CD", "GitHub Actions", "PostgreSQL"],
+      skills: ["Git", "Docker", "AWS", "Kubernetes", "CI/CD", "GitHub Actions", "SQL", "Redis"],
     },
   ];
 
