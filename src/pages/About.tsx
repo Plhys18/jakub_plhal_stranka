@@ -1,4 +1,3 @@
-import Navigation from "@/components/Navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 import { Briefcase, GraduationCap, Languages, Code2, Linkedin, Github, Mail, Cpu, Wrench } from "lucide-react";
@@ -6,22 +5,28 @@ import { Briefcase, GraduationCap, Languages, Code2, Linkedin, Github, Mail, Cpu
 const About = () => {
   const experiences = [
     {
-      title: "Software Engineer",
+      title: "Generative AI Engineer",
+      company: "Y Soft",
+      period: "May 2026 – Present",
+      description: "Build generative AI systems and turn fast-moving research into practical product capabilities.",
+    },
+    {
+      title: "Developer",
       company: "SolarWinds",
-      period: "Apr 2024 – Present",
-      description: "Ship features end to end across C#/.NET backend and React frontend in a distributed, real-time platform. Integrate AI tooling into daily workflows and prototype LLM-based automation.",
+      period: "Jul 2024 – Apr 2026",
+      description: "Shipped C# and React Native features in a global product used by thousands of customers.",
+    },
+    {
+      title: "Full-Stack Engineer",
+      company: "Freelance",
+      period: "Jan 2021 – Present",
+      description: "Built internal systems, websites, automations, notification platforms, and network infrastructure for small businesses—often from the first cable to the final deployment.",
     },
     {
       title: "Teaching Assistant (C & Python)",
       company: "Masaryk University",
-      period: "Sep 2022 – Jun 2023",
+      period: "Sep 2021 – Mar 2023",
       description: "Co-designed assignments and automated testing suites for C and Python courses. Mentored students through debugging, memory management, and algorithmic thinking.",
-    },
-    {
-      title: "Engineer Intern",
-      company: "RPSnet",
-      period: "Jun 2018 – Sep 2019",
-      description: "Supported network infrastructure operations, maintenance, and troubleshooting.",
     },
   ];
 
@@ -51,8 +56,6 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      <Navigation />
-      
       {/* Background decorations */}
       <div className="fixed top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[150px] pointer-events-none" />
       <div className="fixed bottom-0 left-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px] pointer-events-none" />
@@ -67,8 +70,7 @@ const About = () => {
               </div>
               <h1 className="text-6xl md:text-8xl font-black mb-8 text-white tracking-tight drop-shadow-lg">About Me</h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed font-light">
-                Software engineer at <span className="text-white font-medium">SolarWinds</span> shipping full-stack features.
-                Building AI agents and LLM tooling in my free time. BSc Informatics, <span className="text-white font-medium">Masaryk University</span>.
+                I went from pulling cables and automating small businesses to shipping features used by thousands worldwide—and now building generative AI at <span className="text-white font-medium">Y Soft</span>. Solo or in a team, I learn fast, bring momentum, and deliver.
               </p>
               
               {/* Contact & Social Links */}
@@ -120,7 +122,7 @@ const About = () => {
 
             <div className="space-y-8 relative before:absolute before:inset-0 before:ml-8 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-primary/50 before:via-white/10 before:to-transparent">
               {experiences.map((exp, index) => (
-                <ScrollReveal key={index} delay={index * 0.1}>
+                <ScrollReveal key={`${exp.company}-${exp.title}`} delay={index * 0.1}>
                   <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                     <div className="flex items-center justify-center w-16 h-16 rounded-full border-4 border-background bg-primary/20 shadow-[0_0_15px_rgba(102,252,241,0.4)] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 transition-transform duration-300 group-hover:scale-110">
                       <div className="w-4 h-4 bg-primary rounded-full" />
@@ -186,7 +188,7 @@ const About = () => {
 
             <div className="grid md:grid-cols-3 gap-8">
               {skillCategories.map((category, index) => (
-                <ScrollReveal key={index} delay={index * 0.1}>
+                <ScrollReveal key={category.title} delay={index * 0.1}>
                   <div className="h-full rounded-3xl bg-white/5 border border-white/10 p-8 md:p-10 backdrop-blur-xl relative overflow-hidden group hover:border-primary/40 transition-all duration-500 hover:-translate-y-1">
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className="flex items-center gap-4 mb-8">
@@ -219,7 +221,7 @@ const About = () => {
 
             <div className="grid md:grid-cols-3 gap-6">
               {languages.map((lang, index) => (
-                <ScrollReveal key={index} delay={index * 0.1}>
+                <ScrollReveal key={lang.name} delay={index * 0.1}>
                   <div className="text-center p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl hover:bg-white/10 hover:border-primary/40 transition-all duration-500 group">
                     <h3 className="text-2xl font-bold mb-2 text-white group-hover:text-primary transition-colors">{lang.name}</h3>
                     <p className="text-primary/80 font-medium text-lg bg-primary/10 inline-block px-4 py-1 rounded-full">{lang.level}</p>

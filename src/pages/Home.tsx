@@ -27,10 +27,10 @@ const Home = () => {
                     Jakub Plhal
                 </h1>
 <p className="text-xl md:text-3xl font-headline text-primary-dim mb-2 tracking-tight">
-                    Software Developer &amp; AI Enthusiast
+                    Generative AI Engineer &amp; Product Builder
                 </p>
 <p className="text-lg md:text-xl text-on-surface-variant font-light mb-12 max-w-2xl mx-auto">
-                    Software Engineer at SolarWinds
+                    Building generative AI at Y Soft
                 </p>
 <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
 <a className="w-full md:w-auto px-10 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary-container rounded-full font-bold flex items-center justify-center gap-2 transition-transform hover:scale-105 active:scale-95" href="https://www.linkedin.com/in/jakub-plhal18/" target="_blank" rel="noopener noreferrer">
@@ -55,7 +55,7 @@ const Home = () => {
 </div>
 <h3 className="text-2xl font-headline font-bold mb-4 text-on-surface">Full-Stack</h3>
 <p className="text-on-surface-variant leading-relaxed">
-                        Software Engineer at SolarWinds. Building robust, scalable enterprise solutions with a focus on performance and clean architecture.
+                        From wiring offices and automating small businesses to shipping product features used by thousands worldwide.
                     </p>
 </div>
 {/*  Card 2  */}
@@ -186,17 +186,17 @@ const Home = () => {
 {/*  Project 3  */}
 <div className="glass-panel p-8 rounded-xl project-card-glow transition-all duration-500 flex flex-col h-full border-primary/10">
 <div className="flex items-center justify-between mb-6">
-<span className="material-symbols-outlined text-primary text-3xl">monitoring</span>
+<span className="material-symbols-outlined text-primary text-3xl">playing_cards</span>
 <div className="flex gap-2">
-<span className="text-[10px] px-2 py-0.5 rounded-full border border-primary/30 text-primary font-label uppercase">.NET</span>
+<span className="text-[10px] px-2 py-0.5 rounded-full border border-primary/30 text-primary font-label uppercase">PWA</span>
 <span className="text-[10px] px-2 py-0.5 rounded-full border border-primary/30 text-primary font-label uppercase">TypeScript</span>
 </div>
 </div>
-<h3 className="text-xl font-headline font-bold mb-3 text-on-surface">SolarWinds Dashboard</h3>
+<h3 className="text-xl font-headline font-bold mb-3 text-on-surface">Felt Poker</h3>
 <p className="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow">
-                        Optimizing performance for enterprise-scale software monitoring interfaces. Focused on high-frequency data rendering and intuitive information architecture.
+                        A local-first poker night companion with live tracking, P2P spectating, optimized settlements, statistics, and an AI advisor.
                     </p>
-<a className="flex items-center gap-2 text-primary font-medium group text-sm" href="#">
+<a className="flex items-center gap-2 text-primary font-medium group text-sm" href="https://plhys18.github.io/felt-poker/" target="_blank" rel="noopener noreferrer">
                         View Project
                         <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
 </a>
@@ -233,7 +233,7 @@ const Home = () => {
 <div className="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-6">
 <div className="text-lg font-bold text-slate-100 font-headline">JP.DEV</div>
 <p className="text-slate-500 font-body text-sm uppercase tracking-widest text-center">
-                © 2024 Jakub Plhal. Built in the Synthetic Ether.
+                © 2026 Jakub Plhal. Built in the Synthetic Ether.
             </p>
 <div className="flex gap-6">
 <a className="text-slate-500 hover:text-[#5bf3e8] transition-colors font-body text-sm uppercase tracking-widest" href="https://www.linkedin.com/in/jakub-plhal18/" target="_blank" rel="noopener noreferrer">LinkedIn</a>

@@ -1,7 +1,6 @@
-import Navigation from "@/components/Navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
-import { Bot, Search, FlaskConical, Calculator, Mail, Linkedin, Github, ExternalLink } from "lucide-react";
+import { Bot, Search, FlaskConical, Calculator, Spade, Mail, Linkedin, Github, ExternalLink } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 const Portfolio = () => {
@@ -34,6 +33,13 @@ const Portfolio = () => {
       link: "https://github.com/Plhys18/llm-eval",
     },
     {
+      icon: Spade,
+      title: "Felt Poker",
+      description: "Local-first poker session tracker with event sourcing, P2P live spectating, offline PWA support, optimized settlements, player statistics, and an AI advisor.",
+      tags: ["React", "TypeScript", "WebRTC", "PWA"],
+      link: "https://plhys18.github.io/felt-poker/",
+    },
+    {
       icon: Calculator,
       title: "Investment Calculator",
       description: "Interactive financial calculator with compound interest modeling, PDF export, and responsive charting.",
@@ -44,8 +50,6 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      <Navigation />
-      
       {/* Background decorations */}
       <div className="fixed top-20 left-10 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px] pointer-events-none" />
       <div className="fixed bottom-20 right-10 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[150px] pointer-events-none" />
@@ -60,8 +64,8 @@ const Portfolio = () => {
               </div>
               <h1 className="text-6xl md:text-8xl font-black mb-8 text-white tracking-tight drop-shadow-lg">Portfolio</h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
-                AI agents, evaluation frameworks, and robust tools I've built. <br />
-                All open source and available on <span className="text-white font-medium">GitHub</span>.
+                AI agents, evaluation frameworks, and products built to leave the prototype stage. <br />
+                Explore the live apps or inspect the code on <span className="text-white font-medium">GitHub</span>.
               </p>
             </div>
           </ScrollReveal>
@@ -69,7 +73,7 @@ const Portfolio = () => {
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-32">
             {projects.map((project, index) => (
-              <ScrollReveal key={index} delay={index * 0.1}>
+              <ScrollReveal key={project.title} delay={index * 0.1}>
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="block h-full outline-none group">
                   <div className="h-full rounded-3xl bg-white/5 border border-white/10 p-10 backdrop-blur-xl relative overflow-hidden transition-all duration-500 hover:bg-white/10 hover:border-primary/50 hover:shadow-[0_0_40px_rgba(102,252,241,0.15)] hover:-translate-y-2">
                     
